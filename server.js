@@ -75,16 +75,12 @@ app.get('/api/movies', (req, res) => {
 // Description: Filter movies by genre
 // Task: Implement logic to return movies matching the specified genre
 app.get('/api/movies/filter', (req, res) => {
-  // TODO: Add logic to filter movies by genre
-  
-  // ***************************************************************
-  // ***************************************************************
-  // ***************  Implement your code here  ********************
-  // ***************************************************************
-  // ***************************************************************
-
-  // Don't forget to remove the line below:
-  res.status(501).send('Not Implemented');
+  const genreQuery = req.query.genre;
+  if (!genreQuery) {
+    return res.status(400).json({ message: 'Genre query parameter is required.' });
+  }
+  const filteredMovies = movies.filter(movie => movie.genre.toLowerCase() === genreQuery.toLowerCase());
+  res.status(200).json(filteredMovies);
 });
 
 // GET /api/movies/:id
