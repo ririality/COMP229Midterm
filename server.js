@@ -49,7 +49,9 @@ let movies = [
   { title: 'Inception', genre: 'Sci-Fi', year: 2010, director: 'Christopher Nolan' },
   { title: 'The Godfather', genre: 'Drama', year: 1972, director: 'Francis Ford Coppola' },
   { title: 'Pulp Fiction', genre: 'Crime', year: 1994, director: 'Quentin Tarantino' },
-  { title: 'The Dark Knight', genre: 'Action', year: 2008, director: 'Christopher Nolan' }
+  { title: 'The Dark Knight', genre: 'Action', year: 2008, director: 'Christopher Nolan' },
+  { title: 'Nightbitch', genre: 'Drama', year: 2024, director: 'Marielle Heller' },
+  { title: 'My Old Ass', genre: 'Comedy', year: 2024, director: 'Megan Park'}
   ];
 
 // Set the port for the server
